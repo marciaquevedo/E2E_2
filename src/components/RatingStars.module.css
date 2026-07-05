@@ -1,0 +1,38 @@
+.row {
+  display: inline-flex;
+  gap: 4px;
+}
+
+.star {
+  background: none;
+  border: none;
+  padding: 2px;
+  font-size: 22px;
+  line-height: 1;
+  color: var(--border-hairline);
+  transition: color 0.12s ease, transform 0.12s ease;
+}
+
+.star.filled {
+  color: var(--accent-amber);
+}
+
+.star:not(.readOnly):hover {
+  transform: scale(1.12);
+}
+
+.readOnly {
+  cursor: default;
+}
+
+.inline {
+  font-size: 14px;
+  color: var(--text-muted);
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.inline .starChar {
+  color: var(--accent-amber);
+}
